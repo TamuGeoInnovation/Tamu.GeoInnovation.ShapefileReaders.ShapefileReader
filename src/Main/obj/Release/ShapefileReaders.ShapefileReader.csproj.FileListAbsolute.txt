@@ -1,0 +1,4 @@
+C:\DevBuild\Tamu\GeoInnovation\ShapefileReaders\ShapefileReader\build\1.0.0\release\Tamu.GeoInnovation.ShapefileReaders.ShapefileReader.dll
+C:\DevSource\Tamu\GeoInnovation\ShapefileReaders\ShapefileReader\src\Main\obj\Release\ShapefileReaders.ShapefileReader.csprojResolveAssemblyReference.cache
+C:\DevSource\Tamu\GeoInnovation\ShapefileReaders\ShapefileReader\src\Main\obj\Release\Tamu.GeoInnovation.ShapefileReaders.ShapefileReader.dll
+C:\DevSource\Tamu\GeoInnovation\ShapefileReaders\ShapefileReader\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.ShapefileReaders.ShapefileReader.dll
