@@ -64,22 +64,6 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.DistanceFunctions">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.DistanceFunctions\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.DistanceFunctions.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.Units">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.Units\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.Units.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Logging.TraceEvents">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Logging.TraceEvents\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Logging.TraceEvents.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.ShapefileReaders.ShapeLibWrapper">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\ShapefileReaders\ShapeLibWrapper\build\1.0.0\release\Tamu.GeoInnovation.ShapefileReaders.ShapeLibWrapper.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Import\SimpleImporter.cs" />
@@ -112,6 +96,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common.Core.Geo.DistanceFunctions\Src\Main\Common.Core.Geo.DistanceFunctions.Dev.csproj">
+      <Project>{858FA972-963A-483C-B0CA-0110B9538411}</Project>
+      <Name>Common.Core.Geo.DistanceFunctions.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Geo.Units\Src\Main\Common.Core.Geo.Units.Dev.csproj">
+      <Project>{5F42520E-2DDA-4B4A-AFE5-5F5E00E33D47}</Project>
+      <Name>Common.Core.Geo.Units.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Logging.TraceEvents\Src\Main\Common.Core.Logging.TraceEvents.Dev.csproj">
+      <Project>{9F19062E-A949-4FF8-8DC1-7239F06348DF}</Project>
+      <Name>Common.Core.Logging.TraceEvents.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ShapefileReaders.ShapeLibWrapper\src\Main\ShapefileReaders.ShapeLibWrapper.Dev.csproj">
+      <Project>{BD065B63-3CF7-415C-BF7B-9B5096EB69C1}</Project>
+      <Name>ShapefileReaders.ShapeLibWrapper.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
