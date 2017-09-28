@@ -1,17 +1,11 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Types;
+using System;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
-using Microsoft.SqlServer.Types;
-using USC.GISResearchLab.Common.Diagnostics.TraceEvents;
-using USC.GISResearchLab.Common.Geographics.DistanceFunctions;
-using USC.GISResearchLab.Common.Geographics.Units;
 using USC.GISResearchLab.Common.ShapeLibs;
-using System.Threading;
 
 namespace USC.GISResearchLab.Common.ShapefileReader
 {
