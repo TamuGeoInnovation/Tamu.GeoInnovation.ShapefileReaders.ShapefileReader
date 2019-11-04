@@ -129,13 +129,17 @@ namespace USC.GISResearchLab.Common.ShapefileReader
                             // cmdInsertQuery += strFieldName + "], ";
                             switch (fType)
                             {
-                                case ShapeLib.DBFFieldType.FTDouble: columnString += "NUMERIC(15,6) NOT NULL, ";
+                                case ShapeLib.DBFFieldType.FTDouble:
+                                    columnString += "NUMERIC(15,6) NOT NULL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTInteger: columnString += "INT NOT NULL, ";
+                                case ShapeLib.DBFFieldType.FTInteger:
+                                    columnString += "INT NOT NULL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTLogical: columnString += "BOOL, ";
+                                case ShapeLib.DBFFieldType.FTLogical:
+                                    columnString += "BOOL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTString: columnString += "VARCHAR(255), ";
+                                case ShapeLib.DBFFieldType.FTString:
+                                    columnString += "VARCHAR(255), ";
                                     break;
                             }
                         }
@@ -191,13 +195,17 @@ namespace USC.GISResearchLab.Common.ShapefileReader
                                     type = ShapeLib.DBFGetFieldInfo(ptrDBF, field, strFieldName, ref fieldWidth, ref decimals);
                                     switch (type)
                                     {
-                                        case ShapeLib.DBFFieldType.FTDouble: cmdInsert += ShapeLib.DBFReadDoubleAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTDouble:
+                                            cmdInsert += ShapeLib.DBFReadDoubleAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTInteger: cmdInsert += ShapeLib.DBFReadIntegerAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTInteger:
+                                            cmdInsert += ShapeLib.DBFReadIntegerAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTLogical: cmdInsert += ShapeLib.DBFReadLogicalAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTLogical:
+                                            cmdInsert += ShapeLib.DBFReadLogicalAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTString: cmdInsert += "'" + ShapeLib.DBFReadStringAttribute(ptrDBF, count, field).Replace("'", "''") + "',";
+                                        case ShapeLib.DBFFieldType.FTString:
+                                            cmdInsert += "'" + ShapeLib.DBFReadStringAttribute(ptrDBF, count, field).Replace("'", "''") + "',";
                                             break;
                                         case ShapeLib.DBFFieldType.FTInvalid:
                                         default:
@@ -337,13 +345,17 @@ namespace USC.GISResearchLab.Common.ShapefileReader
                             cmdInsertQuery += strFieldName + "], ";
                             switch (fType)
                             {
-                                case ShapeLib.DBFFieldType.FTDouble: columnString += "NUMERIC(15,6) NOT NULL, ";
+                                case ShapeLib.DBFFieldType.FTDouble:
+                                    columnString += "NUMERIC(15,6) NOT NULL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTInteger: columnString += "INT NOT NULL, ";
+                                case ShapeLib.DBFFieldType.FTInteger:
+                                    columnString += "INT NOT NULL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTLogical: columnString += "BOOL, ";
+                                case ShapeLib.DBFFieldType.FTLogical:
+                                    columnString += "BOOL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTString: columnString += "VARCHAR(255), ";
+                                case ShapeLib.DBFFieldType.FTString:
+                                    columnString += "VARCHAR(255), ";
                                     break;
                                 default:
                                     throw new Exception("Invalid field type in file: " + CDMSFile);
@@ -385,13 +397,17 @@ namespace USC.GISResearchLab.Common.ShapefileReader
                                     type = ShapeLib.DBFGetFieldInfo(ptrDBF, field, strFieldName, ref fieldWidth, ref decimals);
                                     switch (type)
                                     {
-                                        case ShapeLib.DBFFieldType.FTDouble: cmdInsert += ShapeLib.DBFReadDoubleAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTDouble:
+                                            cmdInsert += ShapeLib.DBFReadDoubleAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTInteger: cmdInsert += ShapeLib.DBFReadIntegerAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTInteger:
+                                            cmdInsert += ShapeLib.DBFReadIntegerAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTLogical: cmdInsert += ShapeLib.DBFReadLogicalAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTLogical:
+                                            cmdInsert += ShapeLib.DBFReadLogicalAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTString: cmdInsert += "'" + ShapeLib.DBFReadStringAttribute(ptrDBF, count, field).Replace("'", "''") + "',";
+                                        case ShapeLib.DBFFieldType.FTString:
+                                            cmdInsert += "'" + ShapeLib.DBFReadStringAttribute(ptrDBF, count, field).Replace("'", "''") + "',";
                                             break;
                                         case ShapeLib.DBFFieldType.FTInvalid:
                                         default:
@@ -490,13 +506,17 @@ namespace USC.GISResearchLab.Common.ShapefileReader
                             cmdInsertQuery += strFieldName + "], ";
                             switch (fType)
                             {
-                                case ShapeLib.DBFFieldType.FTDouble: columnString += "NUMERIC(15,6) NOT NULL, ";
+                                case ShapeLib.DBFFieldType.FTDouble:
+                                    columnString += "NUMERIC(15,6) NOT NULL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTInteger: columnString += "INT NOT NULL, ";
+                                case ShapeLib.DBFFieldType.FTInteger:
+                                    columnString += "INT NOT NULL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTLogical: columnString += "BOOL, ";
+                                case ShapeLib.DBFFieldType.FTLogical:
+                                    columnString += "BOOL, ";
                                     break;
-                                case ShapeLib.DBFFieldType.FTString: columnString += "VARCHAR(255), ";
+                                case ShapeLib.DBFFieldType.FTString:
+                                    columnString += "VARCHAR(255), ";
                                     break;
                             }
                         }
@@ -539,13 +559,17 @@ namespace USC.GISResearchLab.Common.ShapefileReader
                                         Marshal.ThrowExceptionForHR(Marshal.GetHRForLastWin32Error(), Marshal.GetExceptionPointers());
                                     switch (type)
                                     {
-                                        case ShapeLib.DBFFieldType.FTDouble: cmdInsert += ShapeLib.DBFReadDoubleAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTDouble:
+                                            cmdInsert += ShapeLib.DBFReadDoubleAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTInteger: cmdInsert += ShapeLib.DBFReadIntegerAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTInteger:
+                                            cmdInsert += ShapeLib.DBFReadIntegerAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTLogical: cmdInsert += ShapeLib.DBFReadLogicalAttribute(ptrDBF, count, field).ToString() + ",";
+                                        case ShapeLib.DBFFieldType.FTLogical:
+                                            cmdInsert += ShapeLib.DBFReadLogicalAttribute(ptrDBF, count, field).ToString() + ",";
                                             break;
-                                        case ShapeLib.DBFFieldType.FTString: cmdInsert += "'" + ShapeLib.DBFReadStringAttribute(ptrDBF, count, field).Replace("'", "''") + "',";
+                                        case ShapeLib.DBFFieldType.FTString:
+                                            cmdInsert += "'" + ShapeLib.DBFReadStringAttribute(ptrDBF, count, field).Replace("'", "''") + "',";
                                             break;
                                     }
                                 }

@@ -126,7 +126,7 @@ namespace USC.GISResearchLab.Common.ShapefileReader
                         pshpObj = IntPtr.Zero;
                         pshpObj = ShapeLib.SHPReadObject(ptrSHP, count);
                         shpObj = (ShapeLib.SHPObject)(Marshal.PtrToStructure(pshpObj, typeof(ShapeLib.SHPObject)));
-                        
+
                         if ((Marshal.GetLastWin32Error() != 0) && (pshpObj == IntPtr.Zero))
                         {
                             Marshal.ThrowExceptionForHR(Marshal.GetHRForLastWin32Error(), Marshal.GetExceptionPointers());
